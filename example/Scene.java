@@ -21,10 +21,11 @@ public class Scene {
 
         Geezer theGeezer = Geezer.getTheGeezer();
 
-        SteganographyClassLoader loader = new SteganographyClassLoader(
-                new URL("https://cdn.njuics.cn/example.BubbleSorter.png"));
+        SteganographyClassLoader loader = new SteganographyClassLoader(new URL("file:example.QuickSort_MJ.png"));
 
-        Class c = loader.loadClass("example.BubbleSorter");
+        //SteganographyClassLoader loader = new SteganographyClassLoader(new URL("https://raw.githubusercontent.com/jwork-2021/jw03-2020-qqtcg/main/example.QuickSort_MJ.png"));
+
+        Class c = loader.loadClass("example.QuickSort_MJ");
 
         Sorter sorter = (Sorter) c.newInstance();
 
